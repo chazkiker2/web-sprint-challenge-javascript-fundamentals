@@ -21,9 +21,9 @@ myFunction();
   nestedFunction() can access the variable called internal b/c of JavaScript closures. Here, `internal` 
   is a variable that is local to the function `myFunction()`. Additionally, the function `nestedFunction()` is 
   within the local scope of the function `myFunction()`. As a result, the variable `internal` and the function `nestedFunction()`
-  are packaged together —— accordingly, nestedFunction is able to reach OUTWARDS into the scope of myFunction() and access
-  any variable within the wider range of scope.
-  Thus, nestedFunction() refers to the variable internal without keeping the variable itself. Pretty cool.
+  are packaged together. Consequently, `nestedFunction()` is able to reach OUTWARDS to the `myFunction()` level scope and access
+  any variable within that wider range of scope (the same range of scope that internal is in).
+  Thus, nestedFunction() refers to the variable `internal` without keeping the variable itself. Pretty cool.
 */
 
 /* Task 2: Counter */

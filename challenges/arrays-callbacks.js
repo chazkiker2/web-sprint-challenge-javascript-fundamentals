@@ -18,8 +18,8 @@ const zooAnimals = [
 
 /* 
 * Request 1: .forEach()
-? DRAFT
->> UNTESTED
+* FINISHED
+>> TESTED AND FUNCTIONAL
 
 The zoos want to display both the scientific name and the animal name in front of the habitats. 
 Populate the displayNames array with only the animal_name and scientific_name of each animal. 
@@ -33,8 +33,8 @@ console.log(displayNames);
 
 /* 
 * Request 2: .map()
-? DRAFT
->> UNTESTED
+* FINISHED
+>> TESTED AND FUNCTIONAL
 
 The zoos need a list of all their animal's names (animal_name only) converted to lower case. 
 Using map, create a new array of strings named lowCaseAnimalNames, each string following this pattern: 
@@ -48,21 +48,19 @@ console.log(lowCaseAnimalNames);
 
 /* 
 * Request 3: .filter() 
-? DRAFT
->> UNTESTED
-
+* FINISHED
+>> TESTED AND FUNCTIONAL
 The zoos are concerned about animals with a lower population count. 
 Using filter, create a new array of objects called lowPopulationAnimals which contains only the animals with 
 a population less than 5.
-
 */
 const lowPopulationAnimals = zooAnimals.filter( animal => animal.population < 5);
 console.log(lowPopulationAnimals);
 
 /* 
 * Request 4: .reduce() 
-? DRAFT
->> UNTESTED
+* FINISHED
+>> TESTED AND FUNCTIONAL
 
 The zoos need to know their total animal population across the United States. 
 Find the total population from all the zoos using the .reduce() method. 
@@ -70,20 +68,19 @@ Remember the reduce method takes two arguments: a callback (which itself takes t
 
 */
 let populationTotal = zooAnimals.reduce( ((acc, it) => acc + it.population), 0);
-console.log(populationTotal);
+console.log(populationTotal); //-> 56
 
 
 // ==== Callbacks ====  
 
 /* 
 * Step 1: Create a higher-order function
-? DRAFT
->> UNTESTED
-  
-  * Create a higher-order function named consume with 3 parameters: a, b and cb
-  * The first two parameters can take any argument (we can pass any value as argument)
-  * The last parameter accepts a callback
-  * The consume function should return the invocation of cb, passing a and b into cb as arguments
+* FINISHED
+>> TESTED AND FUNCTIONAL
+  Create a higher-order function named consume with 3 parameters: a, b and cb
+  The first two parameters can take any argument (we can pass any value as argument)
+  The last parameter accepts a callback
+  The consume function should return the invocation of cb, passing a and b into cb as arguments
 */
 const consume = (a, b, cb) => cb(a, b);
 
@@ -91,11 +88,10 @@ const consume = (a, b, cb) => cb(a, b);
 /* 
 * Step 2: Create several functions to callback with consume();
 * FINISHED
->>TESTED  AND PASSED 
-  
-Create a function named add that returns the sum of two numbers
-Create a function named multiply that returns the product of two numbers 
-Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
+>>TESTED  AND FUNCTIONAL 
+  Create a function named add that returns the sum of two numbers
+  Create a function named multiply that returns the product of two numbers 
+  Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
 */
 const add = (num1, num2) => num1 + num2;
 const multiply = (num1, num2) => num1 * num2;
@@ -114,9 +110,7 @@ console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice t
 
 
 /*
-
-? Stretch: If you haven't already, convert your array method callbacks into arrow functions.
-* finished
-
+Stretch: If you haven't already, convert your array method callbacks into arrow functions.
+* FINISHED
 */
 
