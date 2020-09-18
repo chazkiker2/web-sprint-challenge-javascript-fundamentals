@@ -18,7 +18,8 @@ const zooAnimals = [
 
 /* 
 * Request 1: .forEach()
-TODO: UNFINISHED
+? DRAFT
+>> UNTESTED
 
 The zoos want to display both the scientific name and the animal name in front of the habitats. 
 Populate the displayNames array with only the animal_name and scientific_name of each animal. 
@@ -32,7 +33,8 @@ console.log(displayNames);
 
 /* 
 * Request 2: .map()
-TODO: UNFINISHED
+? DRAFT
+>> UNTESTED
 
 The zoos need a list of all their animal's names (animal_name only) converted to lower case. 
 Using map, create a new array of strings named lowCaseAnimalNames, each string following this pattern: 
@@ -46,12 +48,15 @@ console.log(lowCaseAnimalNames);
 
 /* 
 * Request 3: .filter() 
-TODO: UNFINISHED
+? DRAFT
+>> UNTESTED
 
-The zoos are concerned about animals with a lower population count. Using filter, create a new array of objects called lowPopulationAnimals which contains only the animals with a population less than 5.
+The zoos are concerned about animals with a lower population count. 
+Using filter, create a new array of objects called lowPopulationAnimals which contains only the animals with 
+a population less than 5.
 
 */
-const lowPopulationAnimals= [];
+const lowPopulationAnimals = zooAnimals.filter( animal => animal.population < 5);
 console.log(lowPopulationAnimals);
 
 /* 
