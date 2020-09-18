@@ -27,7 +27,7 @@ displayNames will be an array of strings, and each string should follow this pat
 
 */
 const displayNames = [];
-displayNames = zooAnimals.forEach(it => displayNames.push(`Name: ${it.animal_name}, Scientific: ${it.scientific_name}.`));
+zooAnimals.forEach(it => displayNames.push(`Name: ${it.animal_name}, Scientific: ${it.scientific_name}.`));
 console.log(displayNames);
 
 /* 
@@ -41,7 +41,7 @@ Log the resut.
 
 */
 
-const lowCaseAnimalNames
+const lowCaseAnimalNames = zooAnimals.map( it => it.animal_name.toLowerCase());
 console.log(lowCaseAnimalNames);
 
 /* 
@@ -51,7 +51,7 @@ TODO: UNFINISHED
 The zoos are concerned about animals with a lower population count. Using filter, create a new array of objects called lowPopulationAnimals which contains only the animals with a population less than 5.
 
 */
-const lowPopulationAnimals
+const lowPopulationAnimals= [];
 console.log(lowPopulationAnimals);
 
 /* 
